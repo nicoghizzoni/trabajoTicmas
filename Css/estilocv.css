@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@viewport{
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+header{
+    width: 100%;
+    background: #85EBE5;
+    height: 70px;
+}
+.ancho{
+    width: 80%;
+    height: 70px;
+    margin: auto;
+
+}
+
+.logo{
+    width: 15%;
+    height: 70px;
+    float:left;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-shadow: 3px 0px 7px #0e0d0d;font-family: 'Roboto', sans-serif;
+     
+}
+
+.logo p a{
+    color: #fff;
+    text-shadow: #383838 5Px;
+    font-size: 40px;
+    text-decoration: none;
+text-shadow: 3px 0px 7px #0e0d0d;font-family: 'Roboto', sans-serif;
+     
+     
+ }
+
+nav{
+    width: 85%;
+    height: 70px;
+    float:left;
+    text-align: right;
+    padding-top: 23px; 
+    padding-right: 15px; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 0px 7px #0e0d0d; 
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:double; 
+    padding: 10px 20px;
+    font-size: 18px;}
+
+nav ul li a:hover ,nav ul li a#activo:hover{
+    text-shadow: red -3 2px, cyan 3px 0;
+    text-decoration-color: #383838;
+    
+}
+
+.logo p {animation-duration: 2s;
+    animation-name: slidein;
+    
+  }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+ .lateral{
+        width: auto;
+        background-color: #8E9DF5;
+        position: absolute;
+        padding-left: 3px ;
+        padding-right: 3px;
+        top: 71px;
+        bottom: 0;
+        z-index: 999;
+        border-right: 1px solid #383838;
+       
+ } 
+#rightside{width: auto;
+    background-color: #85D4FA;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 90.01%;
+    bottom: 101px;
+    z-index: 999;
+    border-right: 1px solid #383838;
+}
+
+ #datos{text-align: center;
+        text-emphasis: bold;
+        color: #fff;
+ }
+
+.relleno{
+    text-align:center  ;
+    position: fixed;
+    padding-top: 10px;
+    top: 70px;
+    right: 136px;
+    left: 250Px;
+    bottom: 0;
+    text-align: center;
+}
+
+#tarjetas{
+    position: fixed;
+    padding-top: 10px;
+    top:120px;
+    right:136px;
+    width: 950px;
+    height: 300px;
+}
+.pie{
+    background-color: #CD8CDE;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    border-top: 1px #383838;
+    text-align: center;}
+     
+    
+
+/*desaarrollo de menu de redes sociales*/
+
+.social {
+	position: fixed; 
+	right: 0; 
+    bottom: 0;
+	top: 280px; 
+	z-index: 1000;}
+
+	.social ul {
+		list-style: none;}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #fff;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */}
+
+        /* Establecemos los colores de cada red social*/
+	.social ul li .icon-facebook {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url(../Imagenes/icon-facebook2.ico);
+        background-repeat: no-repeat;
+        background-position: center;
+      
+    } 
+	.social ul li .icon-twitter {
+        width: 20px;
+        height: 020px;
+        background: transparent;
+        background-image: url(../Imagenes/icon-twitter.ico);
+        background-repeat: no-repeat;
+        background-position: center;
+              
+    }
+	.social ul li .icon-instagram {
+        width: 20px;
+        height: 20px;
+        background: transparent; 
+        background-image: url(../Imagenes/icon-instagram.ico) ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .social ul li .icon-wapp {
+        width: 20px;
+        height: 20px;
+        background: transparent; 
+        background-image: url(../Imagenes/icon-wapp.ico ) ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+	
+
+	.social ul li a:hover {
+        width: 20px;
+        height: 20px;
+        opacity: 70%; /* Cambiamos el fondo cuando el usuario pase el mouse*/ 
+        padding: 20px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+        
+    }
+
+h1{
+    font-family:  'Roboto', sans-serif;
+    color: aliceblue;
+    text-shadow: 3px 0px 7px #0e0d0d;
+}
+  
